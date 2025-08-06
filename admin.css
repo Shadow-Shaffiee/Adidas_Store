@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #111;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Neon-style glow for text */
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #000;
+    margin-bottom: 30px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #999, 0 0 20px #000;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.table-container {
+    width: 95%;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    font-size: 15px;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #aaa, 0 0 20px #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    transition: background 0.2s ease;
+}
+
+tr:hover td {
+    background: #f1f1f1;
+    color: #000;
+    text-shadow: 0 0 5px #aaa;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 0 5px #fff, 0 0 15px #999;
+}
+
+.theme-toggle:hover {
+    background: #222;
+    transform: scale(1.1);
+}
+
+/* Dark Mode */
+body.dark {
+    background: #000;
+    color: #fff;
+}
+
+body.dark h2 {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #ccc, 0 0 20px #999;
+}
+
+body.dark .table-container {
+    background: #111;
+}
+
+body.dark th {
+    background-color: #fff;
+    color: #000;
+    text-shadow: 0 0 5px #000, 0 0 10px #444;
+}
+
+body.dark td {
+    color: #ddd;
+    border-bottom: 1px solid #333;
+}
+
+body.dark tr:hover td {
+    background: #222;
+    color: #fff;
+    text-shadow: 0 0 5px #888;
+}
+
+body.dark .theme-toggle {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 5px #000, 0 0 15px #fff;
+}
+
